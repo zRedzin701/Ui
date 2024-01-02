@@ -22,7 +22,7 @@ local OrionLib = {
 		Default = {
 			Main = Color3.fromRGB(25, 25, 25),
 			Second = Color3.fromRGB(32, 32, 32),
-			Stroke = Color3.fromRGB(212, 18, 4),
+			Stroke = Color3.fromRGB(207, 17, 17),
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240,240,240),
 			TextDark = Color3.fromRGB(150, 150, 150)
@@ -655,7 +655,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(MinimizeBtn.MouseButton1Up, function()
 		if Minimized then
 			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, 615, 0, 344)}):Play()
-			MinimizeBtn.Ico.Image = "rbxassetid://15673445798"
+			MinimizeBtn.Ico.Image = "rbxassetid://7072719338"
 			wait(.02)
 			MainWindow.ClipsDescendants = false
 			WindowStuff.Visible = true
@@ -663,7 +663,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		else
 			MainWindow.ClipsDescendants = true
 			WindowTopBarLine.Visible = false
-			MinimizeBtn.Ico.Image = "rbxassetid://15673445798"
+			MinimizeBtn.Ico.Image = "rbxassetid://7072720870"
 
 			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, WindowName.TextBounds.X + 140, 0, 50)}):Play()
 			wait(0.1)
