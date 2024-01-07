@@ -22,7 +22,7 @@ local OrionLib = {
 		Default = {
 			Main = Color3.fromRGB(25, 25, 25),
 			Second = Color3.fromRGB(32, 32, 32),
-			Stroke = Color3.fromRGB(207, 17, 17),
+			Stroke = Color3.fromRGB(41, 176, 7),
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240,240,240),
 			TextDark = Color3.fromRGB(150, 150, 150)
@@ -63,13 +63,13 @@ guiRH.Name = "Minimize"
 nextb.Position = UDim2.new(0,100,0,60)
 nextb.Size = UDim2.new(0,40,0,40)
 nextb.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-nextb.Image = "rbxassetid://15673445798"
+nextb.Image = "rbxassetid://15901648373"
 nextb.Visible = false
 nextb.Active = true
 nextb.Draggable = true
 
 nextb.MouseButton1Down:connect(function()
-  nextb.Image = (Orion.Frame1.Visible and "rbxassetid://15673445798") or "rbxassetid://15673445798"
+  nextb.Image = (Orion.Frame1.Visible and "rbxassetid://15901648373") or "rbxassetid://15901648373"
   Orion.Frame1.Visible = not Orion.Frame1.Visible
 end)
 
