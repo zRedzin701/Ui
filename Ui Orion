@@ -1,4 +1,4 @@
-local Orion1 = game.CoreGui:FindFirstChild("zRed Hub <Orion Lib>")
+local Orion1 = game.CoreGui:FindFirstChild("KAMU HUB <Orion Lib>")
 
 if OrionR then
   OrionR:Destroy()
@@ -57,19 +57,19 @@ guiRH = Instance.new("ScreenGui",Orion)
 nextb = Instance.new("ImageButton", guiRH)
 gui = Instance.new("UICorner", nextb)
 
-Orion.Name = "zRed Hub <Orion Lib>"
+Orion.Name = "KAMU HUB <Orion Lib>"
 
 guiRH.Name = "Minimize"
 nextb.Position = UDim2.new(0,100,0,60)
 nextb.Size = UDim2.new(0,50,0,50)
-nextb.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-nextb.Image = "rbxassetid://15901648373"
+nextb.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+nextb.Image = "rbxassetid://15977827324"
 nextb.Visible = false
 nextb.Active = true
 nextb.Draggable = true
 
 nextb.MouseButton1Down:connect(function()
-  nextb.Image = (Orion.Frame1.Visible and "rbxassetid://15901648373") or "rbxassetid://15901648373"
+  nextb.Image = (Orion.Frame1.Visible and "rbxassetid://15977827324") or "rbxassetid://15977827324"
   Orion.Frame1.Visible = not Orion.Frame1.Visible
 end)
 
@@ -480,14 +480,14 @@ function OrionLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "zRed Hub"
+	WindowConfig.Name = WindowConfig.Name or "KAMU HUB"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "zRed Hub"
+	WindowConfig.IntroText = WindowConfig.IntroText or "KAMU HUB"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
@@ -673,11 +673,11 @@ function OrionLib:MakeWindow(WindowConfig)
 	end)
 	
 	AddConnection(CloseBtn.MouseButton1Up, function()
-	  OrionLib:MakeNotification({Name = "zRed Hub",Content = "Destruindo o Script..." ,Image = "rbxassetid://",Time = 5})task.wait(1)
+	  OrionLib:MakeNotification({Name = "KAMU HUB",Content = "Destruindo o Script..." ,Image = "rbxassetid://",Time = 5})task.wait(1)
 	  Orion:Destroy()
 	end)
 
-	OrionLib:MakeNotification({Name = "zRed Hub",Content = "Executando Script..." ,Image = "rbxassetid://",Time = 5})
+	OrionLib:MakeNotification({Name = "KAMU HUB",Content = "Executando Script..." ,Image = "rbxassetid://",Time = 5})
 
 	local function LoadSequence()
 		MainWindow.Visible = false
