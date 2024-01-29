@@ -672,13 +672,6 @@ function OrionLib:MakeWindow(WindowConfig)
 		Minimized = not Minimized    
 	end)
 	
-	AddConnection(CloseBtn.MouseButton1Up, function()
-	  OrionLib:MakeNotification({Name = "KAMU HUB",Content = "Destruindo o Script..." ,Image = "rbxassetid://",Time = 5})task.wait(1)
-	  Orion:Destroy()
-	end)
-
-	OrionLib:MakeNotification({Name = "KAMU HUB",Content = "Executando Script..." ,Image = "rbxassetid://",Time = 5})
-
 	local function LoadSequence()
 		MainWindow.Visible = false
 		local LoadSequenceLogo = SetProps(MakeElement("Image", WindowConfig.IntroIcon), {
